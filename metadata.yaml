@@ -1,0 +1,16 @@
+name: dokku
+summary: The smallest paas you've ever seen
+maintainer: Your Name <you@email.com>
+description: |
+    Dokku is a mini-heroku like paas in about 200 lines of bash.
+tags:
+  # Replace "misc" with one or more whitelisted tags from this list:
+  # https://jujucharms.com/docs/stable/authors-charm-metadata
+  - paas
+  - compute
+  - containers
+subordinate: false
+provides:
+  website:
+    interface: http
+

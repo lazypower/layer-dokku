@@ -1,0 +1,16 @@
+options:
+  vhost_enable:
+    type: boolean
+    default: true
+    description: |
+        Use vhost-based deployments (eg: .dokku.me)
+  hostname:
+    type: string
+    default: 'dokku.juju.rocks'
+    description: |
+        Hostname used as vhost domain and for showing app URL after deploy
+  key_file:
+    type: string
+    default:
+    description: |
+        Public SSH Key to add to the DOKKU user. (Only configurable once)
