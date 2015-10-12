@@ -12,6 +12,7 @@ function install_dokku() {
   DOKKU_TAG=v0.4.1 scripts/dokku.sh
   open-port 80
   open-port 443
+  open-port 22
   charms.reactive.set-state 'dokku.available'
 }
 
